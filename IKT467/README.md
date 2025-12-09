@@ -3,7 +3,7 @@
 **Authors:** Matin Mohammadi, Robert Hanssen, Sander Gnanavel  
 **Course:** IKT467 - Final Project (Fall 2025)
 
-## 🚀 Live Demo (Run in Browser)
+##  Live Demo (Run in Browser)
 The easiest way to test the simulation is via the live web application. No installation is required.
 
  **[Click Here to Launch Simulation](https://ikt467-traffic-jam-model.streamlit.app/)** 
@@ -27,7 +27,7 @@ The model allows for real-time visualization of:
 
 ---
 
-## 🛠 Local Installation
+## Local Installation
 If you prefer to run the code locally, follow these steps:
 
 ### Prerequisites
