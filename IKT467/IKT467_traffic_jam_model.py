@@ -1090,7 +1090,6 @@ if __name__ == "__main__":
 # =============================================================================
 #
 # To run this simulation (CLI):
-#   streamlit run IKT467_traffic_sim_application_v4.py
-#   streamlit run "E:\My files\UiA - Emneinfo\9. Semester\Git-repo\AI_FALL_2025\IKT467\IKT467_traffic_jam_model.py"
+#   streamlit run IKT467_traffic_jam_model.py
 #
 # =============================================================================
