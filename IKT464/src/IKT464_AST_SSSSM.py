@@ -18,7 +18,7 @@ EXPERIMENTS: Architecture ablation
 
 
 # Quick test run
-    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --dataset-config 460h --exp-name v74_hier_gating_TEST --seed 456 --subset-train 4000 --subset-val 400 --batch-size 16 --d-model 64 --n-layers 6 --epochs 5
+    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --exp-name v74_hier_gating_TEST --seed 456 --subset-train 4000 --subset-val 400 --batch-size 16 --d-model 64 --n-layers 6 --epochs 5
     
 """
 
