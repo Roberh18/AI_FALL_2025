@@ -5,20 +5,20 @@ SSM-ASR: Hierarchical States + Gating
 EXPERIMENTS: Architecture ablation
 
     # Exp01: Baseline 336 x 12 (8.56M Params)
-    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --no-hierarchical --no-gating --exp-name v74_baseline_W336_D12 --seed 456 --d-model 336 --n-layers 12 --epochs 30
+    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --no-hierarchical --no-gating --exp-name baseline_W336_D12 --seed 456 --d-model 336 --n-layers 12 --epochs 30
     
     # Exp02: Baseline 336 x 12 + Hierarchical (8.56M Params)
-    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --no-gating --exp-name v74_hier_W336_D12 --seed 456 --d-model 336 --n-layers 12 --epochs 30
+    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --no-gating --exp-name hier_W336_D12 --seed 456 --d-model 336 --n-layers 12 --epochs 30
 
     # Exp03: Baseline 312 x 12 + Gating (8.56M Params)
-    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --no-hierarchical --exp-name v74_gating_W312_D12 --seed 456 --d-model 312 --n-layers 12 --epochs 30
+    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --no-hierarchical --exp-name gating_W312_D12 --seed 456 --d-model 312 --n-layers 12 --epochs 30
 
     # Exp04: Baseline 312 x 12 + Gating + Hierarchical (8.56M Params)
-    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --exp-name v74_hier_gating_W312_D12 --seed 456 --d-model 312 --n-layers 12 --epochs 30
+    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --exp-name hier_gating_W312_D12 --seed 456 --d-model 312 --n-layers 12 --epochs 30
 
 
 # Quick test run
-    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --exp-name v74_hier_gating_TEST --seed 456 --subset-train 4000 --subset-val 400 --batch-size 16 --d-model 64 --n-layers 6 --epochs 5
+    IKT464_AST_SSSSM.py --data-path ../hub_data/librispeech --exp-name hier_gating_TEST --seed 456 --subset-train 4000 --subset-val 400 --batch-size 16 --d-model 64 --n-layers 6 --epochs 5
     
 """
 
