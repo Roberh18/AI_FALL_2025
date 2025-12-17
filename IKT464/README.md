@@ -217,11 +217,15 @@ pip3 install --user "datasets[audio]==2.18.0"
 ## Project Structure
 ```
 IKT464/
-├── IKT464_AST_SSSSM.py      # Main training script
-├── download_dataset.ipynb    # Dataset download notebook
-├── requirements.txt          # Python dependencies
-├── Quick_setup_guide.txt     # Quick installation guide
-├── README.md                 # This file
-├── IKT464___State_Space_Models_for_Automatic_Speech_Transcription.pdf  # 
-└── experiments/              # Experiment outputs (checkpoints, logs)
+├── experiments/                       # Experiment outputs (checkpoints, logs)
+│   ├── exp-01_baseline_W386_D9/       # (best_model.ckpt ~100MB only on HuggingFace)
+│   ├── exp-02_hier_gating_W358_D9/    # (best_model.ckpt ~100MB only on HuggingFace)
+│   ├── exp-03_baseline_W336_D12/      # (best_model.ckpt ~100MB only on HuggingFace)
+│   │   ...
+│   └── exp-10_hier_gating_W200_D30/   # (best_model.ckpt ~100MB only on HuggingFace)
+├── src/                               # Source code
+│   ├── download_dataset.ipynb         # Dataset download notebook
+│   └── IKT464_AST_SSSSM.py            # Main training script
+├── README.md                          # This file
+└── requirements.txt                   # Python dependencies
 ```
