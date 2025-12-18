@@ -1440,8 +1440,8 @@ def train(config: Config):
     if param_counts:
         visualizer.plot_parameter_breakdown(param_counts)
 
-    # 3. Run the fixed hierarchical dynamics plot
-    visualizer.visualize_hierarchical_dynamics(model) # This is the fixed version
+    # 3. Hierarchical dynamics plot
+    visualizer.visualize_hierarchical_dynamics(model) 
 
     # 4. State dynamics heatmap
     print(" Generating: state_dynamics_heatmap.png")
@@ -1672,8 +1672,6 @@ class Visualizer:
             denom = max(1, n_layers - 1)
             layer_progress = layers / denom
             
-            # CORRECTED to match your Config (Early=0.15, Late=0.85)
-            # These formulas now match the logic in HierarchicalSelectiveSSMLayer
             a_early, a_late = 0.15, 0.85
             b_early, b_late = 0.35, 0.12
             c_early, c_late = -0.35, 0.20
